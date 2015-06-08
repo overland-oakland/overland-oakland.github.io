@@ -1,13 +1,25 @@
 <!-- Image Background Page Header -->
 <!-- Note: The background image is set within the business-casual.css file. -->
-<header class="business-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="tagline">{{ site.title }}</h1>
-				<h2 class="tagline">{{ site.tagline }}</h2>
-            </div>
-        </div>
-    </div>
-</header>
+<section id="home">
+	<header class="business-header">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-lg-6 col-lg-push-2">
+                	<h1 class="sr-only">{{ site.title }}</h1>
+					<img src="{{ site.logo }}" class="title-logo image-responsive">
+            	</div>
+        	</div>
+    	</div>
+	</header>
+	<section class="tagline">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-lg-push-2">
+					<h2>{{ site.tagline }}</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</section><!--/#home-->
 
