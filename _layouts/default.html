@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% include head.html %}
+	{% include semantics.html %}
+</head>
+
+<body data-spy="scroll" data-target="#navbar-collapse-main">
+	<!-- Navigation Menu -->
+	{% include topnav.html %}
+
+
+	<!-- Sections defined in the navigation menu -->
+	{% for item in site.data.navigation %}
+		{% include {{ item }}.html %}
+	{% endfor %}
+
+
+	<!-- Footnav -->
+	{% include footer.html %}
+
+	<!-- JavaScripts -->
+	{% include javascripts.html %}
+</body>
+
+</html>

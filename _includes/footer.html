@@ -1,0 +1,24 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline">
+				{% for nav in site.data.navigation %}
+                	<li>
+						<a class="smoothie" href="#{{ nav.target }}">
+							{{ nav.name }}
+						</a>
+					</li>
+					{% unless forloop.last %}
+                    	<li class="footer-menu-divider">&sdot;</li>
+					{% endunless %}
+				{% endfor %}
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy;2015 {{ site.author }}. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+

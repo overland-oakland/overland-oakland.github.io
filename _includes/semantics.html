@@ -1,0 +1,13 @@
+<script type="application/ld+json">
+[{
+	"@context" : "http://schema.org",
+	"@type" : "Place",
+	"name" : {{ site.title }}",
+	"address" : {
+		"@type" : "PostalAddress",
+	{% for field in site.address %}"{{ field.field }}": "{{ field.value }}", {% endfor %}
+	},
+	"telephone" : {{ site.telephone }},
+	"url" : {{ site.url }}"
+}]
+</script>
