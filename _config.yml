@@ -1,7 +1,6 @@
 title: Overland Country Bar & Grill
 author: Paul Hayward & Steve 
 tagline: Oakland's only country bar, featuring live music, line dancing classes, Warriors games, food, drinks and fun.
-url: http://overlandoakland.com
 address:
   - field: streetAddress
     value: 101 Broadway
@@ -12,6 +11,14 @@ address:
   - field: postalCode
     value: 94607
 telephone: 510-419-0594
+url: http://overlandoakland.com
+hours:
+  - day: Sunday - Wednesday
+    time: 10am - 12am
+  - day: Thursday - Saturday
+    time: 10am - 2am
+
+logo: /assets/img/overland.svg
 
 
 timezone: US/Pacific
