@@ -1,0 +1,17 @@
+---
+- section: salads
+- options:
+  - name: add grilled chicken
+    price: 2
+  - name: add fried chicken
+    price: 2.50
+  - name: add pulled pork
+    price: 2
+- items:
+  - name: caesar salad
+    description: romaine lettuce, croutons, parmesan, caesar dressing
+    price: 7
+  - name: mixed greens
+    description: shaved carrots, cucumbers, onion, tomato, balsamic or ranch dressing
+    price: 6.50
+---

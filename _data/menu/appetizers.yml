@@ -1,0 +1,22 @@
+---
+- section: appetizers
+- altsection: sides
+- items:
+  - name: natural cut fries
+    options:
+      - name: seasoned
+        price: 3
+      - name: buttery garlic
+        price: 4
+  - name: hank style fries
+    description: pulled pork, ghost pepper jack cheese
+    price: 7
+  - name: swee'tater fries
+    description: sweet potato fries, bacon aioli
+    price: 4
+  - name: fried pickles
+    description: battered and fried dill pickle spears
+    price: 6
+  - name: onion rings
+    price: 6
+---

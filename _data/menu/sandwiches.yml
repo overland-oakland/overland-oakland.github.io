@@ -1,0 +1,40 @@
+---
+- section: sandwiches
+- description: served with fries
+- options:
+  - name: sub side salad
+    price: 2
+  - name: add peppered bacon
+    price: 2
+  - name: add pulled pork
+    price: 2
+  - name: add carmelized onion
+    price: 1
+  - name: add extra cheese
+    description: blue/jack cheese blend, cheddar, mozzarella
+    price: 1
+  - name: add bbq sauce
+    price: no charge
+- items:
+  - name: hamburger
+    description: lettuce, onion, tomato
+    price: 7
+  - name: cheeseburger
+    description: cheddar cheese, lettuce, onion, tomato
+    price: 8
+  - name: veggieburger
+    description: lettuce, onion, tomato
+    price: 8
+  - name: pulled pork
+    description: braised pork shoulder, slaw, bbq sauce, sweet corn hoagie
+    price: 8
+  - name: sausage sandwich
+    description: schwarz beef hot link, sweet corn hoagie, does not include fries
+    price: 5
+  - name: grilled chicken sandwich
+    description: chicken breast, cheddar cheese, lettuce, onion, tomato
+    price: 7
+  - name: fried chicken sandwich
+    description: panko breaded chicken breast, slaw, chipotle aioli
+    price: 8
+---

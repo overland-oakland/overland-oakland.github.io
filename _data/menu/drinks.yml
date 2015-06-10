@@ -1,0 +1,23 @@
+---
+- section: drinks
+- items:
+    - type: fountain
+      name:
+        - pepsi
+        - diet pepsi
+        - mountain dew
+        - sierra mist
+        - dr. pepper
+        - orange crush
+        - mug root beer
+        - brisk tea unsweetened
+      price: 3
+    - type: red bull
+      name:
+        - regular
+        - sugar free
+        - blueberry
+        - cranberry
+        - tropical
+      price: 4
+---

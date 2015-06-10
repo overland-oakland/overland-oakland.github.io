@@ -1,0 +1,26 @@
+---
+- section: stuffed burgers
+- description: served with fries
+- options:
+  - name: sub side salad
+    price: 2
+  - name: add peppered bacon
+    price: 2
+  - name: add pulled pork
+    price: 2
+  - name: add carmelized onion
+    price: 1
+  - name: add extra cheese
+    description: blue/jack cheese blend, cheddar, mozzarella
+    price: 1
+- items:
+  - name: cheese stuffed
+    description: cheddar cheese stuffed, lettuce, onion, tomato
+    price: 8.5
+  - name: bacon & cheddar stuffed
+    description: cheddar cheese and bacon stuffed, lettuce, onion, tomato
+    price: 8.5
+  - name: italian stuffed
+    description: pepperoni and mozzarella stuffed, lettuce, marinara on top
+    price: 9.5
+---
