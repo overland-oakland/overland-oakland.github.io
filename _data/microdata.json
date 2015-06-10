@@ -1,0 +1,18 @@
+[{
+	"@context" : "http://schema.org",
+	"@type" : "BarOrPub",
+	"name" : "Overland Country Bar & Restaurant",
+	"address" : {
+		"@type" : "PostalAddress",
+		"streetAddress": "101 Broadway",
+		"addressLocality": "Oakland",
+		"addressRegion": "CA",
+		"postalCode": "94607",
+	},
+	"telephone" : "510-419-0594",
+	"openingHours" : "Sunday - Wednesday 10am - 12am",
+	"url" : "http://overlandoakland.com",
+	"sameAs" : [
+		"
+}]
+
