@@ -13,8 +13,6 @@
   - name: add extra cheese
     description: blue/jack cheese blend, cheddar, mozzarella
     price: 1
-  - name: add bbq sauce
-    price: no charge
 - items:
   - name: hamburger
     description: lettuce, onion, tomato
