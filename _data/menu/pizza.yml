@@ -1,14 +1,14 @@
 ---
-- category: pizza
-- description: Served St. Louis style with thin cracker-like crust
-- options:
+category: pizza
+description: Served St. Louis style with thin cracker-like crust
+options:
   - name: extra cheese
     price: 1
   - name: no cheese, extra sauce, no sauce
     price: no charge
   - name: pepperoni
     price: 1
-- items:
+items:
   - name: overland
     description: balsamic onion jam puree, ghost pepper jack cheese, peppered bacon
     price: 9
