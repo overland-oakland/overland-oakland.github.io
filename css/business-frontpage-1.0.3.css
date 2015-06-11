@@ -9,7 +9,7 @@ body {
 }
 
 .business-header {
-    background: url("/assets/images/line-dancing-wikipedia.jpg") center center no-repeat fixed; /*scroll;*/
+    background: url("http://upload.wikimedia.org/wikipedia/commons/4/4e/Line_Dancing.jpg") center center no-repeat fixed; /*scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
