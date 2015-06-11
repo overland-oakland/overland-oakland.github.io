@@ -1,13 +1,20 @@
 <script type="application/ld+json">
 [{
-	"@context" : "http://schema.org",
-	"@type" : "Place",
-	"name" : {{ site.title }}",
+	"@context": "http://schema.org",
+	"@type": "{{ site.type }}",
+	"name": "{{ site.title }}",
+	"telephone" : "{{ site.data.business.contact.telephone }}",
 	"address" : {
 		"@type" : "PostalAddress",
-	{% for field in site.address %}"{{ field.field }}": "{{ field.value }}", {% endfor %}
+	  {% for field in site.data.business.contact.PostalAddress %}
+		"{{ field.field }}" : "{{ field.value }}"{% unless forloop.last %},{% endunless %}
+	  {% endfor %}
 	},
-	"telephone" : {{ site.telephone }},
-	"url" : {{ site.url }}"
-}]
+	"url" : "{{ site.url }}",
+	"sameAs" : [
+	  {% for network in site.data.business.socialmedia %}
+		"{{ network.link }}"{% unless forloop.last %},{% endunless %}
+	  {% endfor %}
+	],
+	{{ site.data.business.hours }},
 </script>
