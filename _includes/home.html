@@ -7,17 +7,19 @@
             	<div class="col-lg-12">
 					<div class="vertical-center">
                 		<h1 class="sr-only">{{ site.title }}</h1>
-						<img src="{{ site.logo }}" class="title-logo image-responsive">
+						<img src="{{ site.logo }}" class="title-logo image-responsive" alt="logo: {{ site.title }}">
 					</div><!--.vertical-center-->
             	</div>
         	</div>
     	</div>
 	</header>
-	<section class="tagline">
+	<section id="info">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-lg-push-2">
-					<h2>{{ site.tagline }}</h2>
+				<div class="col-lg-2 col-lg-push-4">
+					{% for interval in site.data.business.hours %}
+					<h4>{% for day in interval.dayOfWeek %}{% if forloop.first %}{{ day }}{% endif %} - {% if forloop.last %}{{ day }}{% endif %}{% endfor %}</h4>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
