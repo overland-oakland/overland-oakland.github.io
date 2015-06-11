@@ -6,9 +6,10 @@
 	"telephone" : "{{ site.data.business.contact.telephone }}",
 	"address" : {
 		"@type" : "PostalAddress",
-	  {% for field in site.data.business.contact.PostalAddress %}
-		"{{ field.field }}" : "{{ field.value }}"{% unless forloop.last %},{% endunless %}
-	  {% endfor %}
+		"streetAddress" : "{{ site.data.business.contact.street }}",
+		"addressLocality" : "{{ site.data.business.contact.city }}",
+		"addressRegion" : "{{ site.data.business.contact.state }}",
+		"postalCode" : "{{ site.data.business.contact.zip }}"
 	},
 	"url" : "{{ site.url }}",
 	"sameAs" : [
