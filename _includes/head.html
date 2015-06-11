@@ -10,7 +10,9 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap-based Template: "Busness-Frontpage" from startbootstrap -->
-<link href='/css/{% for theme in site.bootstraps %}{{ theme.theme }}{% endfor %}' rel="stylesheet">
+{% for theme in site.bootstraps %}
+<link href='/css/{{ theme.theme }}' rel="stylesheet">
+{% endfor %}
 
 <!-- Custom Fonts -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
