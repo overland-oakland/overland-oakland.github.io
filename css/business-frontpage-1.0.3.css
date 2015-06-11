@@ -1,6 +1,3 @@
----
-headerbg: /assets/images/overland-house.jpg
----
 /*!
  * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -11,11 +8,8 @@ body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-/* Header Image Background - Change the headerbg variable at the top of this page with your image path (example: ../images/background.jpg) */
-
 .business-header {
-/*    height: 400px;*/
-    background: url('{{ page.headerbg }}') center center no-repeat scroll;
+    background: url("/assets/images/overland-house.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
