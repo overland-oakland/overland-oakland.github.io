@@ -1,0 +1,13 @@
+- opens: 10am
+  closes: 12am
+  dayOfWeek:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+- opens: 10am
+  closes: 2am
+  dayOfWeek:
+    - Thursday
+    - Friday
+    - Saturday
