@@ -1,11 +1,6 @@
 telephone: 510-419-0594
 email: info@overlandoakland.com
-PostalAddress:
-- field: streetAddress
-  value: 101 Broadway at Jack London Square
-- field: addressLocality
-  value: Oakland
-- field: addressRegion
-  value: CA
-- field: postalCode
-  value: 94607
+street: 101 Broadway at Jack London Square
+city: Oakland
+state: CA
+zip: 94607
