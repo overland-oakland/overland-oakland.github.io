@@ -17,11 +17,11 @@ options:
 dishes:
   - name: cheese stuffed
     description: cheddar cheese stuffed, lettuce, onion, tomato
-    price: 8.5
+    price: 8.50
   - name: bacon & cheddar stuffed
     description: cheddar cheese and bacon stuffed, lettuce, onion, tomato
-    price: 8.5
+    price: 8.50
   - name: italian stuffed
     description: pepperoni and mozzarella stuffed, lettuce, marinara on top
-    price: 9.5
+    price: 9.50
 ---
