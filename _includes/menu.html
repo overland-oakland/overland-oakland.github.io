@@ -1,8 +1,14 @@
-<section id="menu">
-	{% include menu/food.html sect="pizza" dishes=site.data.menu.pizza.dishes %}
-	{% include menu/food.html sect="sandwiches" dishes=site.data.menu.sandwiches.dishes %}
-	{% include menu/food.html sect="salads" dishes=site.data.menu.salads.dishes %}
-	{% include menu/food.html sect="appetizers" dishes=site.data.menu.appetizers.dishes %}
-	{% include menu/food.html sect="burgers" dishes=site.data.menu.burgers.dishes %}
-	{% include menu/food.html sect="drinks" dishes=site.data.menu.drinks.dishes %}
-</section><!--/#menu-->
+{% comment %}
+This is really just the layout file for the menu.  It uses templates within the menu/ subdirectory to actually generate the markup.
+
+For now, the available templates are:
+  - dishes.html
+  - drinks.html
+
+{% endcomment %}
+{% include menu/dishes.html sect="pizza" dishes=site.data.menu.pizza.dishes %}
+{% include menu/dishes.html sect="sandwiches" dishes=site.data.menu.sandwiches.dishes %}
+{% include menu/dishes.html sect="salads" dishes=site.data.menu.salads.dishes %}
+{% include menu/dishes.html sect="appetizers" dishes=site.data.menu.appetizers.dishes %}
+{% include menu/dishes.html sect="burgers" dishes=site.data.menu.burgers.dishes %}
+{% include menu/dishes.html sect="drinks" dishes=site.data.menu.drinks.dishes %}
