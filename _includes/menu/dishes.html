@@ -8,10 +8,13 @@
 				<h4>
 					<span class="name">{{ dish.name }}</span> <span class="price">{{ dish.price }}</span>
 				</h4>
-				<p class="description">
-				{{ dish.description }}
-				</p>
+			{% if dish.description %}
+				<p class="description">{{ dish.description }}</p>
 			{% endif %}
+			{% if dish.options %}
+				<p>{{ dish.options }}</p>
+			{% endif %}
+		{% endif %}
 		{% endfor %}
 			</div><!--.leftcol-->
 			<div class="rightcol col-lg-6 col-md-6 col-sm-12">
