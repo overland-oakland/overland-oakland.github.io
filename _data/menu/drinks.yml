@@ -1,6 +1,6 @@
 ---
 - section: drinks
-- items:
+- dishes:
     - type: fountain
       name:
         - pepsi

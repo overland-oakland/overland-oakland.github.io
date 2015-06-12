@@ -1,7 +1,7 @@
 ---
 - section: appetizers
 - altsection: sides
-- items:
+- dishes:
   - name: natural cut fries
     options:
       - name: seasoned

@@ -13,7 +13,7 @@
   - name: add extra cheese
     description: blue/jack cheese blend, cheddar, mozzarella
     price: 1
-- items:
+- dishes:
   - name: hamburger
     description: lettuce, onion, tomato
     price: 7

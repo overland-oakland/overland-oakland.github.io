@@ -7,7 +7,7 @@
     price: 2.50
   - name: add pulled pork
     price: 2
-- items:
+- dishes:
   - name: caesar salad
     description: romaine lettuce, croutons, parmesan, caesar dressing
     price: 7
