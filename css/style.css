@@ -6,3 +6,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
+section#social {
+	background: #3f1e1e;
+}
