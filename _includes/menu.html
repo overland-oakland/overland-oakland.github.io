@@ -1,7 +1,8 @@
 <section id="menu">
-	{% for section in site.data.menu.layout %}
-	<section class="menu" id="{{ section }}">
-		{% include menu/{{ section }}.html %}
-	</section><!--.menu#{{ section }}-->
-	{% endfor %}
+	{% include menu/food.html sect="pizza" dishes=site.data.menu.pizza.dishes %}
+	{% include menu/food.html sect="sandwiches" dishes=site.data.menu.sandwiches.dishes %}
+	{% include menu/food.html sect="salads" dishes=site.data.menu.salads.dishes %}
+	{% include menu/food.html sect="appetizers" dishes=site.data.menu.appetizers.dishes %}
+	{% include menu/food.html sect="burgers" dishes=site.data.menu.burgers.dishes %}
+	{% include menu/food.html sect="drinks" dishes=site.data.menu.drinks.dishes %}
 </section><!--/#menu-->
