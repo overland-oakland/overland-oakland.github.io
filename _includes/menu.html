@@ -1,0 +1,7 @@
+<section id="menu">
+	{% for section in site.data.menu.layout %}
+	<section class="menu" id="{{ section }}">
+		{% include menu/{{ section }}.html %}
+	</section><!--.menu#{{ section }}-->
+	{% endfor %}
+</section><!--/#menu-->
