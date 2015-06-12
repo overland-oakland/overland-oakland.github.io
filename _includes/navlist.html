@@ -1,0 +1,5 @@
+{% for nav in site.data.navigation %}
+		<li role="presentation"><a class="smoothie" href="#{{ nav | downcase }}">
+			{{ nav | capitalize }}
+		</a></li>
+{% endfor %}
