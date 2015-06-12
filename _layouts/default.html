@@ -7,20 +7,16 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-collapse-main">
-	<!-- Navigation Menu -->
-	{% include topnav.html %}
+	{% include top.html %}
 
-
-	<!-- Sections defined in the navigation menu -->
-	{% for item in site.data.navigation %}
+{% for item in site.data.navigation %}
+{% capture section_tag %}{% if item == "home" %}header{% else %}section{% endif %}{% endcapture %}
+<{{ section_tag }} id="{{ item }}">
 		{% include {{ item }}.html %}
-	{% endfor %}
+</{{ sectiontag }}><!--/#{{ item }}-->
+{% endfor %}
 
-	<!-- social media -->
-	{% include socialmedia.html %}
-
-	<!-- Footnav -->
-	{% include footer.html %}
+	{% include bottom.html %}
 
 	<!-- JavaScripts -->
 	{% include javascripts.html %}
