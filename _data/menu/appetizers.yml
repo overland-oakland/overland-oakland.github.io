@@ -18,5 +18,6 @@ dishes:
     description: battered and fried dill pickle spears
     price: 6
   - name: onion rings
+    description: battered and fried onion rings
     price: 6
 ---
