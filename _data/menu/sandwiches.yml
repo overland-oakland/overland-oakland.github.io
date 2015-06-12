@@ -1,7 +1,7 @@
 ---
-- section: sandwiches
-- description: served with fries
-- options:
+section: sandwiches
+description: served with fries
+options:
   - name: sub side salad
     price: 2
   - name: add peppered bacon
@@ -13,7 +13,7 @@
   - name: add extra cheese
     description: blue/jack cheese blend, cheddar, mozzarella
     price: 1
-- dishes:
+dishes:
   - name: hamburger
     description: lettuce, onion, tomato
     price: 7
