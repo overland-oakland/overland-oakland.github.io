@@ -1,0 +1,10 @@
+---
+name: red bull
+price: 4
+drinks:
+  - regular
+  - sugar free
+  - blueberry
+  - cranberry
+  - tropical
+---

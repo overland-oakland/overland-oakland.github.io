@@ -1,0 +1,13 @@
+---
+name: fountain
+price: 3
+drinks:
+  - pepsi
+  - diet pepsi
+  - mountain dew
+  - sierra mist
+  - dr. pepper
+  - orange crush
+  - mug root beer
+  - brisk tea unsweetened
+---
