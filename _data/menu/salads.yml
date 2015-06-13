@@ -1,5 +1,5 @@
 ---
-section: salads
+name: salads
 options:
   - name: add grilled chicken
     price: 2

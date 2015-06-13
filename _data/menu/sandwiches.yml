@@ -1,5 +1,5 @@
 ---
-section: sandwiches
+name: sandwiches
 description: served with fries
 options:
   - name: sub side salad

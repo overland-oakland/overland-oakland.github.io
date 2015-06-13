@@ -1,5 +1,5 @@
 ---
-section: drinks
+name: drinks
 dishes:
   - type: fountain
     price: 3
