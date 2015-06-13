@@ -12,8 +12,8 @@
 {% for item in site.data.navigation %}
 {% capture section_tag %}{% if item == "home" %}header{% else %}section{% endif %}{% endcapture %}
 <{{ section_tag }} id="{{ item }}">
-		{% include {{ item }}.html %}
-</{{ sectiontag }}><!--/#{{ item }}-->
+	{% include {{ item }}.html %}
+</{{ section_tag }}><!--/#{{ item }}-->
 {% endfor %}
 
 	{% include bottom.html %}
