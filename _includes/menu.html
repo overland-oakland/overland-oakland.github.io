@@ -1,14 +1,17 @@
 {% comment %}
-This is really just the layout file for the menu.  It uses templates within the menu/ subdirectory to actually generate the markup.
+	This is really just the layout file for the menu.
+	It uses templates within the menu/ directory to actually generate the markup.
+	Those templates get included in the order they appear here.
 
-For now, the available templates are:
-  - food.html
-  - drinks.html
-
+	For now, the available templates are:
+  	  - food.html
+  	  - drinks.html
 {% endcomment %}
-{% include menu/food.html menu=site.data.menu.pizza %}
-{% include menu/food.html menu=site.data.menu.sandwiches %}
-{% include menu/food.html menu=site.data.menu.salads %}
-{% include menu/food.html menu=site.data.menu.appetizers %}
-{% include menu/food.html menu=site.data.menu.burgers %}
-{% include menu/food.html menu=site.data.menu.drinks %}
+
+{% include menu/food.html menu=site.data.menu.food.pizza %}
+{% include menu/food.html menu=site.data.menu.food.sandwiches %}
+{% include menu/food.html menu=site.data.menu.food.salads %}
+{% include menu/food.html menu=site.data.menu.food.appetizers %}
+{% include menu/food.html menu=site.data.menu.food.burgers %}
+
+{% include menu/drinks.html menu=site.data.menu.drinks %}
