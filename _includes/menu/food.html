@@ -3,10 +3,13 @@
 {% endcomment %}
 
 {% assign half = include.menu.dishes.size | divided_by:2 %}
+{% capture name %}{% if include.menu.fullname %}{{ include.menu.fullname }}{% else %}{{ include.menu.name }}{% endif %}{% endcapture %}
+
 <section class="menu" id="{{ include.menu.name }}">
 	<div class="container">
 		<div class="row">
-			<h3 class="sr-only">{% if include.menu.fullname %}{{ include.menu.fullname }}{% else %}{{ include.menu.name }}{% endif %}</h3>
+			<h3 class="sr-only">{{ name }}</h3>
+
 			<div class="left-col col-lg-6 col-md-6 col-sm-12">
 			{% for dish in include.menu.dishes %}
 			{% unless forloop.index <= half %}{% break %}{% endunless %}
