@@ -1,0 +1,19 @@
+{% comment %}
+	This is uglier than the food template.  Not only does it mix presentation and layout, it assumes the data structure.
+{% endcomment %}
+
+<section class="menu" id="drinks">
+	<div class="container">
+		<div class="row">
+			<h3 class="sr-only">Drinks</h3>
+			<div class="left-col col-lg-6 col-md-6 col-sm-12">
+				{% assign drink = site.data.menu.drinks['fountain'] %}
+				{% include menu/beverage.html %}
+			</div><!--.lef-col-->
+			<div class="right-col col-lg-6 col-md-6 col-sm-12">
+				{% assign drink = site.data.menu.drinks['redbull'] %}
+				{% include menu/beverage.html %}
+			</div><!--.right-col-->
+		</div><!--.row-->
+	</div><!--.container-->
+</section><!--.menu#drinks-->
