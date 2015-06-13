@@ -2,13 +2,13 @@
 This is really just the layout file for the menu.  It uses templates within the menu/ subdirectory to actually generate the markup.
 
 For now, the available templates are:
-  - dishes.html
+  - food.html
   - drinks.html
 
 {% endcomment %}
-{% include menu/dishes.html sect="pizza" dishes=site.data.menu.pizza.dishes %}
-{% include menu/dishes.html sect="sandwiches" dishes=site.data.menu.sandwiches.dishes %}
-{% include menu/dishes.html sect="salads" dishes=site.data.menu.salads.dishes %}
-{% include menu/dishes.html sect="appetizers" dishes=site.data.menu.appetizers.dishes %}
-{% include menu/dishes.html sect="burgers" dishes=site.data.menu.burgers.dishes %}
-{% include menu/dishes.html sect="drinks" dishes=site.data.menu.drinks.dishes %}
+{% include menu/food.html menu=site.data.menu.pizza %}
+{% include menu/food.html menu=site.data.menu.sandwiches %}
+{% include menu/food.html menu=site.data.menu.salads %}
+{% include menu/food.html menu=site.data.menu.appetizers %}
+{% include menu/food.html menu=site.data.menu.burgers %}
+{% include menu/food.html menu=site.data.menu.drinks %}
