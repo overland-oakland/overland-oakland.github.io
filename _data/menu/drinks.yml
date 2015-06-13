@@ -1,7 +1,5 @@
 ---
-name: drinks
-dishes:
-  - type: fountain
+fountain:
     price: 3
     name:
       - pepsi
@@ -12,7 +10,7 @@ dishes:
       - orange crush
       - mug root beer
       - brisk tea unsweetened
-  - type: red bull
+red bull:
     price: 4
     name:
       - regular
