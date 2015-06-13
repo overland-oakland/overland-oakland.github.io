@@ -1,6 +1,9 @@
-menu:
+food:
   - pizza
   - sandwiches
   - salads
   - appetizers
   - drinks
+drinks:
+  - fountain
+  - red bull
