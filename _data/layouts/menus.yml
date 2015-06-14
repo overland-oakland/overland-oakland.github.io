@@ -1,9 +1,10 @@
-food:
+---
+always:
   - pizza
+  - burgers
   - sandwiches
   - salads
   - appetizers
-  - brunch
-drinks:
-  - fountain
-  - red bull
+  - drinks
+brunch:
+---
