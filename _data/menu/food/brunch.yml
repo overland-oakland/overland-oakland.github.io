@@ -1,37 +1,25 @@
 ---
 name: brunch
 items:
-  - name: authentic overload
-    description: Everything bagel, pulled pork, fried egg, choice of cheese (cheddar, blue jack cheese blend, American, ghost pepper jack)
-    price: 8
-  - name: cornbread biscuits & gravy
-    description: grits, masa harina, chorizo country gravy
-    price: 8
-  - name: mac & cheese
-    description: cheddar, jack, mozzarella cheese
-    price: 5
-    options:
-      - name: add pulled pork
-        price: 2
-      - name: add grilled chicken
-        price: 2
-      - name: add fried chicken
-        price: 2.5
-  - name: grits
+  - name: egg & cheese breakfast taco
+    description: egg, cheddar cheese, salsa, flour tortilla 
+    price: 3
+  - name: sausage, egg & cheese breakfast taco
+    description: egg, sausage, cheddar cheese, salsa, flour tortilla
+    price: 4
+  - name: bacon, egg & cheese breakfast taco
+    description: egg, bacon, cheddar cheese, salsa, flour tortilla
     price: 4
   - name: breakfast burrito 
-    description: 3 scrambled eggs, bacon, home fries, cheddar cheese
+    description: egg, potato, cheddar cheese, bacon or sausage, flour tortilla
     price: 8
-    options:
-      - name: add pulled pork
-  - name: breakfast tacos
-    description: 3 soft taco shells, ground spicy sausage, scrambled egg, cheddar cheese
-    options:
-      - name: add pulled pork
-  - name: breakfast burger
-    description: cheddar & bacon stuffed burger, fried egg on top
-    price: 8
-  - name: 2 eggs any style
-    description: bacon, grits, cornbread biscuit
-    price: 7.50
+  - name: biscuits & gravy
+    description: flaky buttered biscuit, sausage gravy
+    price: 7
+  - name: drinks
+    options: 
+      - name: bloody mary
+      - name: frozen mimosa
+      - name: john daly
+    price: 7
 ---
