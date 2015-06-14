@@ -1,0 +1,24 @@
+---
+name: drinks
+items:
+  - name: fountain
+    price: 3
+    options:
+      - pepsi
+      - diet pepsi
+      - mountain dew
+      - sierra mist
+      - dr. pepper
+      - orange crush
+      - mug root beer
+      - brisk tea unsweetened
+  - name: redbull
+    fullname: red bull
+    price: 4
+    options:
+      - regular
+      - sugar-free
+      - blueberry
+      - cranberry
+      - tropical
+---
