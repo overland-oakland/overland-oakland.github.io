@@ -1,6 +1,6 @@
 ---
 name: appetizers
-name: appetizers | sides
+fullname: appetizers | sides
 dishes:
   - name: natural cut fries
     options:
