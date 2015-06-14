@@ -5,7 +5,7 @@
 	 viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
 	<style type="text/css">
   <![CDATA[
-  selector {stroke-width: .5em;}
+  path {stroke-width: .5em;}
   ]]>
   </style>
 <g>
