@@ -9,11 +9,13 @@
 <body data-spy="scroll" data-target="#navbar-collapse-main">
 	{% include top.html %}
 
+	{% comment %}
+	<!--
+		// Add sections in the order defined in _data/layouts/website
+	-->
+	{% endcomment %}
 {% for item in site.data.layouts.website %}
-{% capture section_tag %}{% if item == "home" %}header{% else %}section{% endif %}{% endcapture %}
-<{{ section_tag }} id="{{ item }}">
 	{% include {{ item }}.html %}
-</{{ section_tag }}><!--/#{{ item }}-->
 {% endfor %}
 
 	{% include bottom.html %}

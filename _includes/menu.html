@@ -7,26 +7,27 @@
   	  - food.html
   	  - drinks.html
 {% endcomment %}
+<section id="menu">
+	<div class="container">
+		<h2>Menus</h2>
+		<div role="tabpanel">
+			<ul class="nav nab-tabs nav-justified" role="tablist">
+			{% for food in site.data.layouts.menus %}
+				<li role="presentation" {% if forloop.first %}class="active"{% endif %}>
+					<a href="#{{ food }}" aria-controls="{{ food }}" role="tab" data-toggle="tab">
+						{% assign menu = site.data.menu.food[food] %}
+						{% capture name %}{% if menu.fullname %}{{ menu.fullname }}{% else %}{{ menu.name }}{% endif %}{% endcapture %}
+						{{ name | capitalize }}
+					</a>
+				</li>
+			{% endfor %}
+			</ul>
 
-<div class="container">
-	<h2>Menus</h2>
-	<div role="tabpanel">
-		<ul class="nav nab-tabs nav-justified" role="tablist">
-		{% for food in site.data.menu.layouts.food %}
-			<li role="presentation" {% if forloop.first %}class="active"{% endif %}>
-				<a href="#{{ food }}" aria-controls="{{ food }}" role="tab" data-toggle="tab">
-					{% assign menu = site.data.menu.food[food] %}
-					{% capture name %}{% if menu.fullname %}{{ menu.fullname }}{% else %}{{ menu.name }}{% endif %}{% endcapture %}
-					{{ name | capitalize }}
-				</a>
-			</li>
-		{% endfor %}
-		</ul>
-
-		<div class="tab-content">
-		{% for food in site.data.menu.layouts.food %}
-			{% assign menu = site.data.menu.food[food] %}
-			{% include menu/food.html %}
-		{% endfor %}
-	</div><!--tabpanel-->
-</div><!--.container-->
+			<div class="tab-content">
+			{% for food in site.data.layouts.menus %}
+				{% assign menu = site.data.menu.food[food] %}
+				{% include menu/food.html %}
+			{% endfor %}
+		</div><!--tabpanel-->
+	</div><!--.container-->
+</section><!--/#menu-->
