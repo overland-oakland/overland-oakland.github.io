@@ -8,10 +8,23 @@
   	  - drinks.html
 {% endcomment %}
 
-{% include menu/food.html menu=site.data.menu.food.pizza %}
-{% include menu/food.html menu=site.data.menu.food.sandwiches %}
-{% include menu/food.html menu=site.data.menu.food.salads %}
-{% include menu/food.html menu=site.data.menu.food.appetizers %}
-{% include menu/food.html menu=site.data.menu.food.burgers %}
+<div class="container">
+	<h2>Menus</h2>
+	<div role="tabpanel">
+		<ul class="nav nab-tabs nav-justified" role="tablist">
+		{% for menu in site.data.menu.layouts.food %}
+			<li role="presentation" {% if forloop.first %}class="active"{% endif %}>
+				<a href="#{{ menu }}" aria-controls="{{ menu }}" role="tab" data-toggle="tab">
+					{{ menu | capitalize }}
+				</a>
+			</li>
+		{% endfor %}
+		</ul>
 
-{% include menu/drinks.html %}
+		<div class="tab-content">
+		{% for food in site.data.menu.layouts.food %}
+			{% assign menu = site.data.menu.food[food] %}
+			{% include menu/food.html %}
+		{% endfor %}
+	</div><!--tabpanel-->
+</div><!--.container-->
