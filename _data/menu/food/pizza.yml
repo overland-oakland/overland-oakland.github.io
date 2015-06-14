@@ -8,7 +8,7 @@ options:
     price: no charge
   - name: pepperoni
     price: 1
-dishes:
+items:
   - name: overland
     description: balsamic onion jam puree, ghost pepper jack cheese, peppered bacon
     price: 9

@@ -1,0 +1,28 @@
+{% comment %}
+	This is ugly as it mixes presentation and layout.  Basically we figure out how many dishes are in a section and put half of them in the #leftcol <div> and then the other half into the #rightcol <div>.
+{% endcomment %}
+
+
+{% assign half = menu.dishes.size | divided_by:2 %}
+{% assign total = half | times:2 %}
+{% if total < menu.dishes.size %}{% assign half = half | plus:1 %}{% endif %}
+
+<section role="tabpanel" class="menu tab-pane{% if forloop.first %} active{% endif %}" id="{{ menu.name }}">
+	<div class="left-col col-lg-6 col-md-6 col-sm-12">
+		<div class="list-group">
+		{% for dish in menu.dishes %}
+			{% unless forloop.index <= half %}{% break %}{% endunless %}
+				{% include menu/dish.html %}
+			{% endfor %}
+		</div><!--.list-group-->
+	</div><!--.leftcol-->
+
+	<div class="rightcol col-lg-6 col-md-6 col-sm-12">
+		<div class="list-group">
+		{% for dish in menu.dishes %}
+			{% unless forloop.index > half %}{% continue %}{% endunless %}
+				{% include menu/dish.html %}
+			{% endfor %}
+		</div><!--.list-group-->
+	</div><!--.rightcol-->
+</section><!--.menu#{{ menu.name }}-->

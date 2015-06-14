@@ -14,7 +14,7 @@ options:
   - name: add extra cheese
     description: blue/jack cheese blend, cheddar, mozzarella
     price: 1
-dishes:
+items:
   - name: cheese stuffed
     description: cheddar cheese stuffed, lettuce, onion, tomato
     price: 8.50
