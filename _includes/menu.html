@@ -12,10 +12,12 @@
 	<h2>Menus</h2>
 	<div role="tabpanel">
 		<ul class="nav nab-tabs nav-justified" role="tablist">
-		{% for menu in site.data.menu.layouts.food %}
+		{% for food in site.data.menu.layouts.food %}
 			<li role="presentation" {% if forloop.first %}class="active"{% endif %}>
-				<a href="#{{ menu }}" aria-controls="{{ menu }}" role="tab" data-toggle="tab">
-					{{ menu | capitalize }}
+				<a href="#{{ food }}" aria-controls="{{ food }}" role="tab" data-toggle="tab">
+					{% assign menu = site.data.menu.food[food] %}
+					{% capture name %}{% if menu.fullname %}{{ menu.fullname }}{% else %}{{ menu.name }}{% endif %}{% endcapture %}
+					{{ name | capitalize }}
 				</a>
 			</li>
 		{% endfor %}
