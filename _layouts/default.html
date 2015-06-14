@@ -9,7 +9,7 @@
 <body data-spy="scroll" data-target="#navbar-collapse-main">
 	{% include top.html %}
 
-{% for item in site.data.navigation %}
+{% for item in site.data.layouts.website %}
 {% capture section_tag %}{% if item == "home" %}header{% else %}section{% endif %}{% endcapture %}
 <{{ section_tag }} id="{{ item }}">
 	{% include {{ item }}.html %}
