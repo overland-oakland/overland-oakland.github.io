@@ -7,27 +7,62 @@
   	  - food.html
   	  - drinks.html
 {% endcomment %}
+
+				{% comment %}
+						{% assign menu = site.data.menu[menu] %}
+						{% capture name %}{% if menu.fullname %}{{ menu.fullname }}{% else %}{{ menu.name }}{% endif %}{% endcapture %}
+						{{ name | capitalize }}
+				{% endcomment %}
+
 <section id="menu">
-	<div class="container">
+	<div class="container-fluid">
 		<h2>Menus</h2>
 		<div role="tabpanel">
 			<ul class="nav nab-tabs nav-justified" role="tablist">
-			{% for food in site.data.layouts.menus %}
-				<li role="presentation" {% if forloop.first %}class="active"{% endif %}>
-					<a href="#{{ food }}" aria-controls="{{ food }}" role="tab" data-toggle="tab">
-						{% assign menu = site.data.menu.food[food] %}
-						{% capture name %}{% if menu.fullname %}{{ menu.fullname }}{% else %}{{ menu.name }}{% endif %}{% endcapture %}
-						{{ name | capitalize }}
-					</a>
+			{% for book in site.data.layouts.menu %}
+				{% assign title = book[0] %}
+				<li role="presentation"{% if forloop.first %}
+					  class="active"{% endif %}>
+					<a data-target="#{{ title }}"
+						  aria-controls="{{ title }}"
+						  role="tab" data-toggle="tab"
+					>{{ title | upcase }}</a>
 				</li>
 			{% endfor %}
 			</ul>
 
 			<div class="tab-content">
-			{% for food in site.data.layouts.menus %}
-				{% assign menu = site.data.menu.food[food] %}
-				{% include menu/food.html %}
+			{% for book in site.data.layouts.menu %}
+				<div id="{{ book[0] }}"
+					 role="tabpanel"
+					 class="tab-pane{% if forloop.first %} active{% endif %}"
+				>
+				{% if book[1].size > 1 %}
+					<ul class="nav nab-tabs nav-justified" role="tablist">
+					{% for title in book[1] %}
+						<li role="presentation"{% if forloop.first %} class="active"{% endif %}>
+							<a data-target="#{{ title }}"
+								role="tab" data-toggle="tab"
+								aria-controls="{{ title }}"
+							>{{ title | capitalize }}</a>
+						</li>
+					{% endfor %}
+					</ul>
+
+					<div class="tab-content">
+					{% for title in book[1] %}
+						{% assign carte = site.data.menu[title] %}
+						{% include menu/carte.html %}
+					{% endfor %}
+					</div><!--.tab-content-->
+				{% else %}{% comment %}book[1].size == 1{% endcomment %}
+					{% assign carte = site.data.menu[book[0]] %}
+					{% include menu/carte.html %}
+				{% endif %}
+				</div><!--.tab-pane tabpanel-->
 			{% endfor %}
+			</div><!--.tab-content-->
+
 		</div><!--tabpanel-->
 	</div><!--.container-->
 </section><!--/#menu-->

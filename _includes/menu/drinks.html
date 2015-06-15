@@ -1,19 +1,9 @@
-{% comment %}
-	This is uglier than the food template.  Not only does it mix presentation and layout, it assumes the data structure.
-{% endcomment %}
+<div class="list-group-item">
+	<h4><span class="name">{{ item.name }}</span> <span class="price">{{ item.price }}</span></h4>
 
-<section class="menu" id="drinks">
-	<div class="container">
-		<div class="row">
-			<h3 class="sr-only">Drinks</h3>
-			<div class="left-col col-lg-6 col-md-6 col-sm-12">
-				{% assign drink = site.data.menu.drinks['fountain'] %}
-				{% include menu/beverage.html %}
-			</div><!--.lef-col-->
-			<div class="right-col col-lg-6 col-md-6 col-sm-12">
-				{% assign drink = site.data.menu.drinks['redbull'] %}
-				{% include menu/beverage.html %}
-			</div><!--.right-col-->
-		</div><!--.row-->
-	</div><!--.container-->
-</section><!--.menu#drinks-->
+	<p class="options">
+	{% for option in item.items %}
+		{{ option.name }} {{ option.price }}{% unless forloop.last %} | {% endunless %}
+	{% endfor %}
+	</p>
+</div><!--.list-group-item-->
