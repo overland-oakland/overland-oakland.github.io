@@ -7,4 +7,5 @@ always:
   - appetizers
   - drinks
 brunch:
+  - brunch
 ---
