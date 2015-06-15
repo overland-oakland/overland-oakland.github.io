@@ -1,9 +1,0 @@
-<div class="list-group-item">
-	<h4><span class="name">{{ item.name }}</span> <span class="price">{{ item.price }}</span></h4>
-
-	<p class="options">
-	{% for option in item.items %}
-		{{ option.name }} {{ option.price }}{% unless forloop.last %} | {% endunless %}
-	{% endfor %}
-	</p>
-</div><!--.list-group-item-->
