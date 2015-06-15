@@ -1,0 +1,11 @@
+---
+name: specials
+description: join us for
+items:
+  - name: happy hour
+    description: weekdays | 4pm - 7pm
+  - name: taco tuesday
+    description: 2 dollar tacos | 4pm - 10pm | frozen margaritas
+  - name: wingo wednesday
+    description: 50 cent wings | 4pm - 10pm
+---
