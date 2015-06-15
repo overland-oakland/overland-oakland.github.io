@@ -3,7 +3,7 @@ name: drinks
 items:
   - name: fountain
     price: 3
-    options:
+    selection:
       - pepsi
       - diet pepsi
       - mountain dew
@@ -15,7 +15,7 @@ items:
   - name: redbull
     fullname: red bull
     price: 4
-    options:
+    selection:
       - regular
       - sugar-free
       - blueberry
