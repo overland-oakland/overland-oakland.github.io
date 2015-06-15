@@ -1,5 +1,5 @@
 ---
-always:
+regular:
   - pizza
   - burgers
   - sandwiches
@@ -8,4 +8,6 @@ always:
   - drinks
 brunch:
   - brunch
+specials:
+  - specials
 ---
