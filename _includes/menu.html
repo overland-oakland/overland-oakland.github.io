@@ -10,7 +10,6 @@
 
 				{% comment %}
 						{% assign menu = site.data.menu[menu] %}
-						{% capture name %}{% if menu.fullname %}{{ menu.fullname }}{% else %}{{ menu.name }}{% endif %}{% endcapture %}
 						{{ name | capitalize }}
 				{% endcomment %}
 
@@ -39,11 +38,13 @@
 				>
 					<ul class="nav nab-tabs nav-justified" role="tablist">
 					{% for title in book[1] %}
+						{% assign carte = site.data.menu[title] %}
+						{% capture name %}{% if carte.fullname %}{{ carte.fullname }}{% else %}{{ carte.name }}{% endif %}{% endcapture %}
 						<li role="presentation"{% if forloop.first %} class="active"{% endif %}>
 							<a data-target="#{{ title }}"
 								role="tab" data-toggle="tab"
 								aria-controls="{{ title }}"
-							>{{ title | capitalize }}</a>
+							>{{ name }}</a>
 						</li>
 					{% endfor %}
 					</ul>
