@@ -10,13 +10,12 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap-based Template: "Busness-Frontpage" from startbootstrap -->
-{% for theme in site.bootstraps %}
+{% comment %}{% for theme in site.bootstraps %}
 <link href='/css/{{ theme.theme }}' rel="stylesheet">
-{% endfor %}
+{% endfor %}{% endcomment %}
 
-<!-- Custom Fonts -->
+<!-- Font Awesome -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
 
 <!-- Custom CSS -->
 <link href="/css/style.css" rel="stylesheet">
@@ -27,5 +26,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+<!-- Adobe TypeKit fonts -->
 <script src="//use.typekit.net/ong5izv.js"></script>
 <script>try{Typekit.load();}catch(e){}</script> 
