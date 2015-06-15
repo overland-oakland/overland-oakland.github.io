@@ -37,7 +37,6 @@
 					 role="tabpanel"
 					 class="tab-pane{% if forloop.first %} active{% endif %}"
 				>
-				{% if book[1].size > 1 %}
 					<ul class="nav nab-tabs nav-justified" role="tablist">
 					{% for title in book[1] %}
 						<li role="presentation"{% if forloop.first %} class="active"{% endif %}>
@@ -55,10 +54,6 @@
 						{% include menu/carte.html %}
 					{% endfor %}
 					</div><!--.tab-content-->
-				{% else %}{% comment %}book[1].size == 1{% endcomment %}
-					{% assign carte = site.data.menu[book[0]] %}
-					{% include menu/carte.html %}
-				{% endif %}
 				</div><!--.tab-pane tabpanel-->
 			{% endfor %}
 			</div><!--.tab-content-->
