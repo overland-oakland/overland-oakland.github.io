@@ -7,18 +7,29 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-collapse-main">
+	{% comment %}<!--
+	// <head> and the top navigation menua as defined in _data/layouts/website
+	-->{% endcomment %}
 	{% include top.html %}
 
-	{% comment %}
-	<!--
+	{% comment %}<!--
 		// Add sections in the order defined in _data/layouts/website
-	-->
-	{% endcomment %}
+	-->{% endcomment %}
+
 {% for item in site.data.layouts.website %}
-	{% include {{ item }}.html %}
+{% capture element %}{% if forloop.first %}header{% else %}section{% endif %}{% endcapture %}
+	<{{ element }} id="{{ item }}" class="pad-section">
+	{% unless forloop.first %}<h2 class="text-center">{{ item | capitalize }}</h2>{% endunless %}
+		<div class="container-fluid">
+			{% include {{ item }}.html %}
+		</div><!--.container-fluid-->
+	</{{ element }}><!--.pad-section#{{ item }}-->
 {% endfor %}
 
-	{% include bottom.html %}
+
+	<footer class="pad-section">
+		{% include bottom.html %}
+	</footer><!--.pad-section-->
 
 	<!-- JavaScripts -->
 	{% include javascripts.html %}
