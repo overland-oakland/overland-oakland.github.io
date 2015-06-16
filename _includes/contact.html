@@ -1,13 +1,9 @@
-<section id="contact">
-	<div class="container">
-		<div class="row text-center">
-			<ul class="list-inline">
-		{% for soc in site.data.business.contact.online %}
-				<li><a href="{{ soc.link }}" class="btn btn-default btn-lg">
-					<i class="fa fa-{% unless soc.name == "email" %}{{ soc.name }}{% else %}envelope{% endunless %} fa-3x fa-fw"></i>
-				</a></li>
-		{% endfor %}
-			</ul>
-		</div><!--.row-->
-	</div><!--.container-->
-</section><!--/#contact-->
+<div class="row text-center">
+	<ul class="list-inline">
+{% for soc in site.data.business.contact.online %}
+		<li><a href="{{ soc.link }}" class="btn btn-default btn-lg">
+			<i class="fa fa-{% unless soc.name == "email" %}{{ soc.name }}{% else %}envelope{% endunless %} fa-3x fa-fw"></i>
+		</a></li>
+{% endfor %}
+	</ul>
+</div><!--.row-->

@@ -8,57 +8,46 @@
   	  - drinks.html
 {% endcomment %}
 
-				{% comment %}
-						{% assign menu = site.data.menu[menu] %}
-						{{ name | capitalize }}
-				{% endcomment %}
+<div role="tabpanel">
+	<ul class="nav nab-tabs nav-justified" role="tablist">
+	{% for book in site.data.layouts.menu %}
+		{% assign title = book[0] %}
+		<li role="presentation"{% if forloop.first %}
+			  class="active"{% endif %}>
+			<a data-target="#{{ title }}"
+				  aria-controls="{{ title }}"
+				  role="tab" data-toggle="tab"
+			>{{ title | upcase }}</a>
+		</li>
+	{% endfor %}
+	</ul>
 
-<section id="menu">
-	<div class="container-fluid">
-		<h2>Menus</h2>
-		<div role="tabpanel">
+	<div class="tab-content">
+	{% for book in site.data.layouts.menu %}
+		<div id="{{ book[0] }}"
+			 role="tabpanel"
+			 class="tab-pane{% if forloop.first %} active{% endif %}"
+		>
 			<ul class="nav nab-tabs nav-justified" role="tablist">
-			{% for book in site.data.layouts.menu %}
-				{% assign title = book[0] %}
-				<li role="presentation"{% if forloop.first %}
-					  class="active"{% endif %}>
+			{% for title in book[1] %}
+				{% assign carte = site.data.menu[title] %}
+				{% capture name %}{% if carte.fullname %}{{ carte.fullname }}{% else %}{{ carte.name }}{% endif %}{% endcapture %}
+				<li role="presentation"{% if forloop.first %} class="active"{% endif %}>
 					<a data-target="#{{ title }}"
-						  aria-controls="{{ title }}"
-						  role="tab" data-toggle="tab"
-					>{{ title | upcase }}</a>
+						role="tab" data-toggle="tab"
+						aria-controls="{{ title }}"
+					>{{ name }}</a>
 				</li>
 			{% endfor %}
 			</ul>
 
 			<div class="tab-content">
-			{% for book in site.data.layouts.menu %}
-				<div id="{{ book[0] }}"
-					 role="tabpanel"
-					 class="tab-pane{% if forloop.first %} active{% endif %}"
-				>
-					<ul class="nav nab-tabs nav-justified" role="tablist">
-					{% for title in book[1] %}
-						{% assign carte = site.data.menu[title] %}
-						{% capture name %}{% if carte.fullname %}{{ carte.fullname }}{% else %}{{ carte.name }}{% endif %}{% endcapture %}
-						<li role="presentation"{% if forloop.first %} class="active"{% endif %}>
-							<a data-target="#{{ title }}"
-								role="tab" data-toggle="tab"
-								aria-controls="{{ title }}"
-							>{{ name }}</a>
-						</li>
-					{% endfor %}
-					</ul>
-
-					<div class="tab-content">
-					{% for title in book[1] %}
-						{% assign carte = site.data.menu[title] %}
-						{% include menu/carte.html %}
-					{% endfor %}
-					</div><!--.tab-content-->
-				</div><!--.tab-pane tabpanel-->
+			{% for title in book[1] %}
+				{% assign carte = site.data.menu[title] %}
+				{% include menu/carte.html %}
 			{% endfor %}
 			</div><!--.tab-content-->
-
-		</div><!--tabpanel-->
-	</div><!--.container-->
-</section><!--/#menu-->
+		</div><!--.tab-pane tabpanel-->
+	{% endfor %}
+	</div><!--.tab-content-->
+</div><!--tabpanel-->

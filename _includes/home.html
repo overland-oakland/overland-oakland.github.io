@@ -1,27 +1,19 @@
-<!-- Image Background Page Header -->
-<!-- Note: The background image is set within the business-casual.css file. -->
-<header id="home" class="business-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 vertical-center">
-                <h1 class="sr-only">{{ site.title }}</h1>
-				<img src="{{ site.logo }}" class="title-logo image-responsive" alt="logo: {{ site.title }}">
-            </div>
-		</div><!--.row-->
-		<div class="row">
-			<div class="col-lg-6">
-				{% for interval in site.data.business.hours %}
-				<h4>{% for day in interval.dayOfWeek %}{% if forloop.first %}{{ day }} &ndash; {% endif %}{% if forloop.last %}{{ day }}{% endif %}{% endfor %}</h4>
-				<h5>{{ interval.opens }} &ndash; {{ interval.closes }}</h5>
-				{% endfor %}
-			</div>
-			<div class="col-lg-6">
-				<h4>{{ site.title }}</h4>
-				<h5>{{ site.data.business.contact.street }}</h5>
-				<h5>{{ site.data.business.contact.city }}, {{ site.data.business.contact.state }}</h5>
-				<h5>{{ site.data.business.contact.telephone }}</h5>
-			</div>
-		</div><!--.row-->
-	</div><!--.container-->
-</header><!--.business-header#home-->
-
+<div class="row">
+    <div id="title" class="col-lg-6 col-lg-push-3 col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 text-center">
+        <h1 class="sr-only">{{ site.title }}</h1>
+    </div>
+</div><!--.row-->
+<div class="row">
+	<div class="col-lg-6">
+		{% for interval in site.data.business.hours %}
+		<h4>{% for day in interval.dayOfWeek %}{% if forloop.first %}{{ day }} &ndash; {% endif %}{% if forloop.last %}{{ day }}{% endif %}{% endfor %}</h4>
+		<h5>{{ interval.opens }} &ndash; {{ interval.closes }}</h5>
+		{% endfor %}
+	</div>
+	<div class="col-lg-6">
+		<h4>{{ site.title }}</h4>
+		<h5>{{ site.data.business.contact.street }}</h5>
+		<h5>{{ site.data.business.contact.city }}, {{ site.data.business.contact.state }}</h5>
+		<h5>{{ site.data.business.contact.telephone }}</h5>
+	</div>
+</div><!--.row-->
