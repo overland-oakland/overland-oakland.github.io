@@ -1,0 +1,23 @@
+.foodItem {
+	.text-primary;
+	margin: 20px;
+}
+
+.foodItem-name {
+	.text-uppercase;
+	margin-top: 0;
+	margin-bottom: 2px;
+}
+
+.foodItem-price {
+	&:before {
+		content: '|';
+		margin-left: 1px;
+		margin-right: 4px;
+	}
+}
+
+.foodItem-description {
+	font-size: 1.1em;
+	.text-light;
+}

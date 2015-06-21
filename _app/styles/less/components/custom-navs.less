@@ -1,0 +1,62 @@
+.nav>li {
+	display: inline-block;
+	.text-uppercase;
+}
+
+.nav-pills {
+	> li > a {
+		padding: 10px 12px;
+		&:hover {
+			&:before {
+				.active-star-left;
+			}
+
+			background-color: transparent;
+			color: @brand-primary;
+
+			&:after {
+				.active-star-right;
+			}
+		}
+	}
+	> li.active > a {
+		&,
+		&:hover,
+		&:focus {
+			&:before {
+				.active-star-left;
+			}
+
+			background-color: transparent;
+			color: @brand-primary;
+
+			&:after {
+				.active-star-right;
+			}
+		}
+	}
+}
+
+.tier1-tabs {
+	.flex-centerContent;
+}
+
+.tier1-tabs--tab {
+	.text-semibold;
+	font-size: 1.2em;
+
+	&:hover {
+		&:before {
+			.active-star-left;
+		}
+		&:after {
+			.active-star-right;
+		}
+	}
+}
+
+.tier2-tabs {
+	.flex-centerContent;
+	.text-uppercase;
+	font-size: 1.1em;
+}
