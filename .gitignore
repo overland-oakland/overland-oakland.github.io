@@ -1,4 +1,8 @@
 _site
 *.swp
-Gemfile*
 index.html.template
+_app/bower_components
+_app/styles/css
+.ruby-version
+node_modules
+.idea

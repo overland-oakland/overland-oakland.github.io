@@ -1,3 +1,13 @@
+safe: true
+lsi: true
+highlighter: pygments
+markdown: kramdown
+
+# Permalinks
+permalink: pretty
+
+exclude: ['node_modules']
+
 title: Overland Country Bar & Restaurant
 type: BarOrPub
 
