@@ -18,16 +18,14 @@
 
 {% for item in site.data.layouts.website %}
 {% capture element %}{% if forloop.first %}header{% else %}section{% endif %}{% endcapture %}
-	<{{ element }} id="{{ item }}" class="pad-section">
-	{% unless forloop.first %}<h2 class="text-center">{{ item | capitalize }}</h2>{% endunless %}
-		<div class="container-fluid">
+	<{{ element }} id="{{ item }}">
+	{% unless forloop.first %}<div class="container"><div class="row pad-25-top"><h2 class="text-center">{{ item | capitalize }}</h2></div>{% endunless %}
 			{% include {{ item }}.html %}
-		</div><!--.container-fluid-->
 	</{{ element }}><!--.pad-section#{{ item }}-->
 {% endfor %}
 
 
-	<footer class="pad-section">
+	<footer class="bg-primary">
 		{% include bottom.html %}
 	</footer><!--.pad-section-->
 

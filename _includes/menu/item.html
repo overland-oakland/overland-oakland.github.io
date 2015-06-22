@@ -1,8 +1,11 @@
-<div class="list-group-item">
-	<h4><span class="name">{{ item.name }}</span> <span class="price">{{ item.price }}</span></h4>
+<div class="foodItem">
+	<h4 class="foodItem-name">
+		<strong>{{ item.name }}</strong>
+		<span class="foodItem-price">{{ item.price }}</span>
+	</h4>
 
 {% if item.description %}
-	<p class="description">
+	<p class="foodItem-description">
 		{{ item.description }}
 	</p>
 {% endif %}
@@ -14,10 +17,8 @@
 	</p>
 {% endif %}
 {% if item.selection %}
-	<ul class="list-group selection">
 	{% for option in item.selection %}
-		<li class="list-group-item">{{ option }}</li>
+	<p class="foodItem-description">{{ option }}</p>
 	{% endfor %}
-	</ul>
 {% endif %}
 </div><!--.list-group-item-->

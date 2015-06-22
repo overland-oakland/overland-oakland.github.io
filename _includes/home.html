@@ -3,17 +3,17 @@
         <h1 class="sr-only">{{ site.title }}</h1>
     </div>
 </div><!--.row-->
-<div class="row">
-	<div class="col-lg-6">
+<div class="row business-info-group">
+	<div class="col-md-3 col-md-offset-3 businessInfoGroup text-center">
 		{% for interval in site.data.business.hours %}
 		<h4>{% for day in interval.dayOfWeek %}{% if forloop.first %}{{ day }} &ndash; {% endif %}{% if forloop.last %}{{ day }}{% endif %}{% endfor %}</h4>
 		<h5>{{ interval.opens }} &ndash; {{ interval.closes }}</h5>
 		{% endfor %}
 	</div>
-	<div class="col-lg-6">
-		<h4>{{ site.title }}</h4>
-		<h5>{{ site.data.business.contact.street }}</h5>
-		<h5>{{ site.data.business.contact.city }}, {{ site.data.business.contact.state }}</h5>
-		<h5>{{ site.data.business.contact.telephone }}</h5>
+	<div class="col-md-3 businessInfoGroup text-center">
+		<h4 class="text-uppercase businessInfoGroup-title">{{ site.title }}</h4>
+		<h5 class="businessInfoGroup-street">{{ site.data.business.contact.street }}</h5>
+		<h5 class="businessInfoGroup-city">{{ site.data.business.contact.city }}, {{ site.data.business.contact.state }}</h5>
+		<h5 class="businessInfoGroup-telephone">{{ site.data.business.contact.telephone }}</h5>
 	</div>
 </div><!--.row-->
