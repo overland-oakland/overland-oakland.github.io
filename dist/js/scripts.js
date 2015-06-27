@@ -10154,3 +10154,4 @@ return jQuery;
   });
 });
 
+$('#regularSubCategories').tabCollapse();

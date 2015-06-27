@@ -33,7 +33,7 @@
 				 role="tabpanel"
 				 class="tab-pane{% if forloop.first %} active{% endif %}"
 			>
-				<ul class="nav nav-pills tier2-tabs" role="tablist">
+				<ul id="{{ book[0] }}SubCategories" class="nav nav-pills tier2-tabs" role="tablist">
 				{% for title in book[1] %}
 					{% assign carte = site.data.menu[title] %}
 					{% capture name %}{% if carte.fullname %}{{ carte.fullname }}{% else %}{{ carte.name }}{% endif %}{% endcapture %}

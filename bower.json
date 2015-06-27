@@ -18,6 +18,7 @@
   "devDependencies": {
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.5",
-    "slick.js": "~1.5.5"
+    "slick.js": "~1.5.5",
+    "bootstrap-tabcollapse": "~0.2.6"
   }
 }
