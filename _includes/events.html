@@ -1,3 +1,11 @@
 <div class="row pad-25-bottom">
-	<h3>Stuff is Happening</h3>
+	<h3>{{ site.data.events.regular.description | capitalize }}</h3>
+
+	{% for event in site.data.events.regular.items %}
+		{% if event.thumbnail %}
+			<img src="{{ event.thumbnail }}" alt="{{ event.name }}">
+		{% endif %}
+		<h4>{{ event.name | capitalize }}</h4>
+		<p>{{ event.description }}</p>
+	{% endfor %}
 </div><!--.row-->
