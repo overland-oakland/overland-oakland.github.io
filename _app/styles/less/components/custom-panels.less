@@ -1,0 +1,38 @@
+@panel-header-color: #eadac3;
+@panel-body-color: #f4e9d9;
+
+.panel {
+	background-color: @brand-info;
+	box-shadow: none;
+}
+
+.panel-group .panel {
+	border-radius: 0;
+}
+
+
+.panel-default {
+	border-color: @brand-info;
+
+	> .panel-heading {
+		color: @brand-primary;
+		background-color: @panel-header-color;
+		border-color: @panel-header-color;
+		border-radius: 0;
+	}
+
+	.panel-body {
+		background-color: @panel-body-color;
+	}
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+	border-top: 1px solid @brand-info;
+}
+
+
+//.panel-body {
+//	background-color: @brand-info;
+//	//border: transparent;
+//}
+
