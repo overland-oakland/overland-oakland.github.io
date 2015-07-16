@@ -19,14 +19,15 @@ h2 {
 }
 
 /* additional sections */
-#home {
-    background: url("/assets/images/overland-house.jpg") center center no-repeat fixed; /*scroll;*/
+.home {
+    /*background: url("/assets/images/overland-house.jpg") center center no-repeat fixed; /!*scroll;*!/*/
+	background: url("/dist/img/wood.jpg") center center no-repeat fixed; /*scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 	display: table;
-	height: 100%;
+	/*height: 100%;*/
 	position: relative;
 	width: 100%;
 }
