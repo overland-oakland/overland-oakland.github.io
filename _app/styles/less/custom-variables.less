@@ -1,7 +1,9 @@
 // Brand colors
 // -------------------------
-@brand-primary: #311718;
-@brand-info: #F8EFDF;
+@brand-primary: #311718;  //#2B2419
+@brand-info: #F9F2E5;
+@brand-warning: #F9A52B;
+@brand-success: #9b4a37;
 
 // Typography
 // -------------------------
@@ -14,20 +16,23 @@
 //@navbar-height: 85px;
 
 // Default Navbar --> use for B2C navbar
-@navbar-default-color: @brand-primary;
-@navbar-default-bg: @brand-info;
+@navbar-default-color: @brand-info;
+@navbar-default-bg: @brand-success;
 //
 //// Navbar links
-@navbar-default-link-color:                @brand-primary;
-//@navbar-default-link-hover-color:          #333;
+@navbar-default-link-color:                @brand-info;
+@navbar-default-link-hover-color:          @brand-info;
 //@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:          @brand-info;
 
 //Inverse Navbar --> use for B2B navbar
 @navbar-inverse-brand-color: @brand-info;
 @navbar-inverse-link-color: @brand-info;
-@navbar-inverse-bg: @brand-primary;
-@navbar-inverse-border: @brand-primary;
+@navbar-inverse-bg: @brand-success;
+@navbar-inverse-border: @brand-success;
 
 @state-info-text:                @brand-info;
 @state-info-bg:                  @brand-info;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:             @brand-warning;
