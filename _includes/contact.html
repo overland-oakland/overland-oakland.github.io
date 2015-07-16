@@ -1,9 +1,36 @@
-<div class="row pad-25-vertical text-center">
-	<ul class="list-inline">
-{% for soc in site.data.business.contact.online %}
-		<li><a href="{{ soc.link }}" class="btn btn-default btn-lg">
-			<i class="fa fa-{% unless soc.name == "email" %}{{ soc.name }}{% else %}envelope{% endunless %} fa-3x fa-fw"></i>
-		</a></li>
-{% endfor %}
-	</ul>
-</div><!--.row-->
+<section id="contact">
+	<div class="container">
+		<div class="row pad-25-top">
+			<h2 class="text-center section-header text-info">Contact</h2>
+			<div class="row pad-25-vertical text-center">
+				<div class="col-xs-12 col-sm-4">MAP</div>
+				<div class="col-xs-12 col-sm-4 businessInfoGroup text-left">
+					<h4 class="text-uppercase businessInfoGroup-title">{{ site.title }}</h4>
+					<h5 class="businessInfoGroup-street">{{ site.data.business.contact.street }}</h5>
+					<h5 class="businessInfoGroup-city">{{ site.data.business.contact.city }}, {{ site.data.business.contact.state }}</h5>
+					<h5 class="businessInfoGroup-telephone">{{ site.data.business.contact.telephone }}</h5>
+					<a class="businessInfoGroup-email" href="mailto:{{ site.data.business.contact.email }}?subject=Website+Query">{{ site.data.business.contact.email }}</a>
+				</div>
+				<div class="col-xs-12 col-sm-4">
+					<div class="row">
+						{% for soc in site.data.business.contact.online %}
+							<div class="col-xs-6">
+								<div class="socialIcons">
+									<a href="{{ soc.link }}" class="btn btn-primary">
+										<i class="fa fa-{% unless soc.name == "email" %}{{ soc.name }}{% else %}envelope{% endunless %} fa-2x fa-fw"></i>
+									</a>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+		<!-- /.col-xs-12 -->
+		<!--<ul class="list-inline">-->
+	<!--{% for soc in site.data.business.contact.online %}-->
+			<!--<li><a href="{{ soc.link }}" class="btn btn-primary">-->
+				<!--<i class="fa fa-{% unless soc.name == "email" %}{{ soc.name }}{% else %}envelope{% endunless %} fa-2x fa-fw"></i>-->
+			<!--</a></li>-->
+	<!--{% endfor %}-->
+		<!--</ul>-->
+	</div><!--.row-->
+</section>

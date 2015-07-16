@@ -1,19 +1,17 @@
-<div class="row">
-    <div id="title" class="col-lg-6 col-lg-push-3 col-md-8 col-md-push-2 col-sm-10 col-sm-push-1 text-center">
-        <h1 class="sr-only">{{ site.title }}</h1>
-    </div>
-</div><!--.row-->
-<div class="row business-info-group">
-	<div class="col-md-3 col-md-offset-3 businessInfoGroup text-center">
-		{% for interval in site.data.business.hours %}
-		<h4>{% for day in interval.dayOfWeek %}{% if forloop.first %}{{ day }} &ndash; {% endif %}{% if forloop.last %}{{ day }}{% endif %}{% endfor %}</h4>
-		<h5>{{ interval.opens }} &ndash; {{ interval.closes }}</h5>
-		{% endfor %}
+<div class="container">
+	<div class="row pad-25-top">
+		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+			<img src="../assets/img/overland.svg" class="img-responsive center-block pad-75-top">
+			<h1 class="sr-only">{{ site.title }}</h1>
+		</div>
+	</div><!--.row-->
+	<div class="row pad-50-vertical">
+		<div class="col-sm-10 col-sm-offset-1">
+			<div class="row">
+				<div class="col-xs-6 col-sm-4"><img src="/dist/img/LineDancing.png" class="img-responsive center-block"></div>
+				<div class="col-xs-6 col-sm-4"><img src="/dist/img/IceColdBeer.png" class="img-responsive center-block"></div>
+				<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0"><img src="/dist/img/liveMusic.png" class="img-responsive center-block"></div>
+			</div>
+		</div>
 	</div>
-	<div class="col-md-3 businessInfoGroup text-center">
-		<h4 class="text-uppercase businessInfoGroup-title">{{ site.title }}</h4>
-		<h5 class="businessInfoGroup-street">{{ site.data.business.contact.street }}</h5>
-		<h5 class="businessInfoGroup-city">{{ site.data.business.contact.city }}, {{ site.data.business.contact.state }}</h5>
-		<h5 class="businessInfoGroup-telephone">{{ site.data.business.contact.telephone }}</h5>
-	</div>
-</div><!--.row-->
+</div>

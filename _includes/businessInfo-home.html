@@ -1,0 +1,17 @@
+<div class="container-fluid">
+	<div class="row businessInfo">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 businessInfoGroup text-center">
+			{% for interval in site.data.business.hours %}
+			<h4 class="businessInfoGroup-title">{% for day in interval.dayOfWeek %}{% if forloop.first %}{{ day }} &ndash; {% endif %}{% if forloop.last %}{{ day }}{% endif %}{% endfor %}</h4>
+			<h5>{{ interval.opens }} &ndash; {{ interval.closes }}</h5>
+			{% endfor %}
+		</div>
+
+		<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 businessInfoGroup text-center">
+			<h4 class="text-uppercase businessInfoGroup-title">{{ site.title }}</h4>
+			<h5 class="businessInfoGroup-street">{{ site.data.business.contact.street }}</h5>
+			<h5 class="businessInfoGroup-city">{{ site.data.business.contact.city }}, {{ site.data.business.contact.state }}</h5>
+			<h5 class="businessInfoGroup-telephone">{{ site.data.business.contact.telephone }}</h5>
+		</div>
+	</div><!--.row-->
+</div>

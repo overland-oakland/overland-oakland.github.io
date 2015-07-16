@@ -16,18 +16,19 @@
 		// Add sections in the order defined in _data/layouts/website
 	-->{% endcomment %}
 
-{% for item in site.data.layouts.website %}
-{% capture element %}{% if forloop.first %}header{% else %}section{% endif %}{% endcapture %}
-	<{{ element }} id="{{ item }}">
-	{% unless forloop.first %}<div class="container"><div class="row pad-25-top"><h2 class="text-center section-header">{{ item | capitalize }}</h2></div>{% endunless %}
-			{% include {{ item }}.html %}
-	</{{ element }}><!--.pad-section#{{ item }}-->
-{% endfor %}
+	<section id="home" class="home">
+		{% include home.html %}
+	</section>
 
+	{% include businessInfo-home.html %}
 
-	<footer class="bg-primary">
-		{% include bottom.html %}
-	</footer><!--.pad-section-->
+	{% include menu.html %}
+
+	{% include events.html %}
+
+	{% include contact.html %}
+
+	{% include footer.html %}
 
 	<!-- JavaScripts -->
 	{% include javascripts.html %}
