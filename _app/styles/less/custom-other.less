@@ -17,16 +17,25 @@
 	font-size: 2.8em;
 }
 
+.businessInfo {
+	background: @brand-primary;
+	padding: 10px 15px;
+}
+
 .businessInfoGroup {
+	padding-top: 20px;
 	.text-info;
 	font-size: 1.1em;
 
-	> h5 {
-		.text-thin;
-		font-size: 1.1em;
+	> h5, a {
+		//.text-thin;
+		.text-light;
+		font-size: 1.25em;
 	}
 	> h4.businessInfoGroup-title {
-			font-size: 1em;
+			font-size: 1.25em;
+			.text-semibold;
+			.track-text-1;
 	}
 	> h5.businessInfoGroup-street {
 		margin-bottom: 0px;
