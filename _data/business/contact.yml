@@ -1,8 +1,9 @@
-telephone: 510-419-0594
+telephone: 510.419.0594
 street: 101 Broadway at Jack London Square
 city: Oakland
 state: CA
 zip: 94607
+email: info@overlandoakland.com
 online:
 - name: facebook
   link: https://www.facebook.com/pages/Overland/1505213739750421
@@ -12,5 +13,3 @@ online:
   link: https://instagram.com/overlandoakland
 - name: yelp
   link: http://www.yelp.com/biz/overland-oakland
-- name: email
-  link: mailto:info@overlandoakland.com?subject=Website+Query
