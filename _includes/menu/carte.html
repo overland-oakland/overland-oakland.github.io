@@ -9,7 +9,7 @@
 
 <div role="tabpanel" class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ carte.name }}">
 	<div class="col-xs-12 col-sm-6 pad-50-lateral">
-		<div class="list-group">
+		<div class="foodItemGroup-firstItem">
 		{% for item in carte.items %}
 			{% if forloop.index <= half %}
 	   	   	   {% include menu/item.html %}
@@ -19,7 +19,7 @@
 	</div><!--.leftcol-->
 
 	<div class="col-xs-12 col-sm-6 pad-50-lateral">
-		<div class="list-group">
+		<div class="foodItemGroup-lastItem">
 		{% for item in carte.items %}
 			{% if forloop.index > half %}
 				{% include menu/item.html %}
