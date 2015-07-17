@@ -15,3 +15,30 @@ footer {
 		}
 	}
 }
+
+.footerLinkGroup {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+.footerLinkGroup-item {
+	display: inline-block;
+}
+
+.footerLink {
+	.text-thin;
+	.text-center;
+	color: @brand-info;
+	//display: inline-block;
+	font-size: 1.25em;
+	letter-spacing: .03em;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+	}
+}
