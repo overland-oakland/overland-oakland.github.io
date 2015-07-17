@@ -2,13 +2,24 @@
 name: always
 description: join us for
 items:
-  - name: happy hour
-    description: weekdays | 4pm - 7pm
+  - title: line dancing
+    day: every Thursday, Friday, Saturday
+    time: 8PM
+    description:
     thumbnail:
-  - name: taco tuesday
-    description: 2 dollar tacos | 4pm - 10pm | frozen margaritas
+  - title: happy hour
+    day: everyday
+    time: 4 - 7PM
+    description:
     thumbnail:
-  - name: wingo wednesday
-    description: 50 cent wings | 4pm - 10pm
+  - title: taco tuesday
+    day: every Tuesday
+    time: 4 - 10PM
+    description: 2 dollar tacos, frozen margaritas
+    thumbnail:
+  - title: wingo wednesday
+    day: every Wednesday
+    time: 4 - 10PM
+    description: 50 cent wings
     thumbnail:
 ---

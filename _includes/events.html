@@ -1,20 +1,30 @@
-<section id="events">
+<section id="events" class="events pad-50-bottom">
 	<div class="container">
-		<div class="row pad-25-top">
+		<div class="row">
 			<h2 class="text-center section-header text-warning">Events</h2>
-			<div class="row pad-25-bottom">
-
-				<h3>{{ site.data.events.regular.description | capitalize }}</h3>
-
-				{% for event in site.data.events.regular.items %}
-				{% if event.thumbnail %}
-				<img src="{{ event.thumbnail }}" alt="{{ event.name }}">
-				{% endif %}
-				<h4>{{ event.name | capitalize }}</h4>
-				<p>{{ event.description }}</p>
-				{% endfor %}
-
-			</div><!--.row-->
 		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+				<ul class="list-unstyled text-center">
+				{% for event in site.data.events.regular.items %}
+				<li class="eventItem">
+					{% if event.thumbnail %}
+					<img src="{{ event.thumbnail }}" alt="{{ event.name }}">
+					{% endif %}
+					<h3 class="eventItem-title">{{ event.title | capitalize }}</h3>
+					<h4 class="eventItem-subtitle">{{ event.day }}
+						<span class="eventItem-subtitle--time">{{ event.time }}</span>
+					</h4>
+					{% if event.description %}
+						<p class="eventItem-description">
+							{{ event.description }}
+						</p>
+					{% endif %}
+				</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div><!--.row-->
 	</div>
 </section>
