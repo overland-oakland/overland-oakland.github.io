@@ -1,4 +1,7 @@
-telephone: 510.419.0594
+telephone:
+  - number: 510
+  - number: 419
+  - number: 0594
 street: 101 Broadway at Jack London Square
 city: Oakland
 state: CA

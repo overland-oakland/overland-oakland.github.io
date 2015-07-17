@@ -11,7 +11,18 @@
 			<h4 class="text-uppercase businessInfoGroup-title">{{ site.title }}</h4>
 			<h5 class="businessInfoGroup-street">{{ site.data.business.contact.street }}</h5>
 			<h5 class="businessInfoGroup-city">{{ site.data.business.contact.city }}, {{ site.data.business.contact.state }}</h5>
-			<h5 class="businessInfoGroup-telephone">{{ site.data.business.contact.telephone }}</h5>
+			<h5 class="businessInfoGroup-telephone">
+				<a class="businessInfoGroup-telephone--link" href="tel:+1{% for tel in site.data.business.contact.telephone %}{{ tel.number | prepend:'-' }}{% endfor %}">
+					{% for tel in site.data.business.contact.telephone %}
+						{% if forloop.first %}
+							{{ tel.number }}
+						{% else %}
+							{{ tel.number | prepend:'.' }}
+						{% endif %}
+					{% endfor %}
+				</a>
+			</h5>
 		</div>
 	</div><!--.row-->
 </div>
+
