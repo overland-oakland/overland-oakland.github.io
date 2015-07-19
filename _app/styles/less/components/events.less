@@ -16,11 +16,22 @@
 	.foodItem-name;
 	.text-semibold;
 	font-size: 1.3em;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
 .eventItem-subtitle--time {
 	.foodItem-price;
 	.text-light;
+	text-transform: none;
+}
+
+.eventItem-subtitle--description {
+	.eventItem-subtitle--time;
+
+	&:before {
+		margin-right: 1px;
+	}
 }
 
 .eventItem-description {

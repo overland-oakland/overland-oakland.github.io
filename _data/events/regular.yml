@@ -1,25 +1,39 @@
 ---
-name: always
-description: join us for
 items:
-  - title: line dancing
-    day: every Thursday, Friday, Saturday
-    time: 8PM
-    description:
+  - day: Sunday
+    eventsList:
+      - title: Bluegrass Brunch
+        time: 11AM - 2PM
+      - title: Trivia Night
+        description: (Coming Soon)
     thumbnail:
-  - title: happy hour
-    day: everyday
-    time: 4 - 7PM
-    description:
+  - day: Monday
+    eventsList:
+      - title: Industry Night
+        description: $5 Sailor Jerry, $5 Jack Daniels, $3 PBR Tallboys
+      - title: DJ Kit Friday
+  - day: Tuesday
+    eventsList:
+      - title: Taco Tuesday
+        time: 4PM - 10PM
+        description: $2 Tacos
+      - title: Country Karaoke
+        time: 8PM - Midnight
+  - day: Wingo Wednesday
+    description: 50¢ wings | Bingo at 8PM
     thumbnail:
-  - title: taco tuesday
-    day: every Tuesday
-    time: 4 - 10PM
-    description: 2 dollar tacos, frozen margaritas
-    thumbnail:
-  - title: wingo wednesday
-    day: every Wednesday
-    time: 4 - 10PM
-    description: 50 cent wings
-    thumbnail:
+  - day: Thursday
+    eventsList:
+      - title: Twang Honky Tonk
+        description: Line dancing lessons at 8PM
+  - day: Friday
+    eventsList:
+      - title: Line Dancing
+        description: two step | waltz
+  - day: Saturday
+    eventsList:
+      - title: Bluegrass Brunch
+        time: 11AM - 2PM
+      - title: Live Music
+        time: 8PM -1AM
 ---
