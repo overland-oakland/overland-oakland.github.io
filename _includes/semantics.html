@@ -3,7 +3,7 @@
 	"@context": "http://schema.org",
 	"@type": "{{ site.type }}",
 	"name": "{{ site.title }}",
-	"telephone" : "{{ site.data.business.contact.telephone }}",
+	"telephone" : "1{% for tel in site.data.business.contact.telephone %}{{ tel.number }}{% endfor %}",
 	"address" : {
 		"@type" : "PostalAddress",
 		"streetAddress" : "{{ site.data.business.contact.street }}",

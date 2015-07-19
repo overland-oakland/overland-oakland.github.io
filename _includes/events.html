@@ -12,10 +12,20 @@
 					{% if event.thumbnail %}
 					<img src="{{ event.thumbnail }}" alt="{{ event.name }}">
 					{% endif %}
-					<h3 class="eventItem-title">{{ event.title | capitalize }}</h3>
-					<h4 class="eventItem-subtitle">{{ event.day }}
-						<span class="eventItem-subtitle--time">{{ event.time }}</span>
+					<h3 class="eventItem-title">{{ event.day }}</h3>
+					{% for list in event.eventsList %}
+					<h4 class="eventItem-subtitle">
+						{% if list.title %}{{ list.title }}{% endif %}
+						{% if list.time %}
+							<span class="eventItem-subtitle--time">{{ list.time }}</span>
+						{% endif %}
+						{% if list.description %}
+						<span class="eventItem-subtitle--description">
+							{{ list.description }}
+						</span>
+						{% endif %}
 					</h4>
+					{% endfor %}
 					{% if event.description %}
 						<p class="eventItem-description">
 							{{ event.description }}
