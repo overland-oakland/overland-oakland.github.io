@@ -3,19 +3,28 @@ name: brunch
 items:
   - name: egg & cheese breakfast taco
     description: egg, cheddar cheese, salsa, flour tortilla 
-    price: 3
+    price: 
   - name: sausage, egg & cheese breakfast taco
     description: egg, sausage, cheddar cheese, salsa, flour tortilla
-    price: 4
+    price:
   - name: bacon, egg & cheese breakfast taco
     description: egg, bacon, cheddar cheese, salsa, flour tortilla
-    price: 4
+    price:
   - name: breakfast burrito 
     description: egg, potato, cheddar cheese, bacon or sausage, flour tortilla
-    price: 8
+    price: 10
+  - name: steak & eggs
+    description: 6oz new york steak, scrambled eggs, rosemary breakfast potatoes
+    price: 16.50
+  - name: breakfast standard
+    description: srambled eggs, breakfast potatoes, wheat or white bread, bacon or sausage
+    price: 10
+  - name: french toast
+    description: texas toast, cinnamon, powdered sugar, maple syrup
+    price: 10
   - name: biscuits & gravy
     description: flaky buttered biscuit, sausage gravy
-    price: 7
+    price: 9.50
   - name: drinks
     options: 
       - name: bloody mary
