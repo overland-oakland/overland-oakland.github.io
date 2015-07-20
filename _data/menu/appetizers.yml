@@ -5,15 +5,19 @@ items:
   - name: natural cut fries
     options:
       - name: seasoned
-        price: 3
-      - name: buttery garlic
         price: 4
+      - name: buttery garlic
+        price: 5
   - name: hank style fries
     description: pulled pork, ghost pepper jack cheese
-    price: 7
+    price: 8.50
+  - name: garth style fries
+    options:
+      - name: pulled pork, ghost pepper jack cheese | add peppered bacon
+        price: 2
   - name: swee'tater fries
     description: sweet potato fries, bacon aioli
-    price: 4
+    price: 5.50
   - name: fried pickles
     description: battered and fried dill pickle spears
     price: 6

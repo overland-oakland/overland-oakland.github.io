@@ -16,23 +16,23 @@ options:
 items:
   - name: hamburger
     description: lettuce, onion, tomato
-    price: 7
+    price: 8.50
   - name: cheeseburger
     description: cheddar cheese, lettuce, onion, tomato
-    price: 8
+    price: 9.50
   - name: veggieburger
     description: lettuce, onion, tomato
-    price: 8
+    price: 9
   - name: pulled pork
     description: braised pork shoulder, slaw, bbq sauce, sweet corn hoagie
-    price: 8
+    price: 9
   - name: sausage sandwich
     description: schwarz beef hot link, sweet corn hoagie, does not include fries
-    price: 5
+    price: 6
   - name: grilled chicken sandwich
     description: chicken breast, cheddar cheese, lettuce, onion, tomato
-    price: 7
+    price: 8.50
   - name: fried chicken sandwich
     description: panko breaded chicken breast, slaw, chipotle aioli
-    price: 8
+    price: 9.50
 ---

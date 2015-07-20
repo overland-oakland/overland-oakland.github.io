@@ -3,7 +3,7 @@ items:
   - day: Sunday
     eventsList:
       - title: Bluegrass Brunch
-        time: 11AM - 2PM
+        time: 10AM - 2PM
       - title: Trivia Night
         description: (Coming Soon)
     thumbnail:
@@ -12,6 +12,7 @@ items:
       - title: Industry Night
         description: $5 Sailor Jerry, $5 Jack Daniels, $3 PBR Tallboys
       - title: DJ Kit Friday
+        description: (Coming Soon)
   - day: Tuesday
     eventsList:
       - title: Taco Tuesday
@@ -33,7 +34,7 @@ items:
   - day: Saturday
     eventsList:
       - title: Bluegrass Brunch
-        time: 11AM - 2PM
+        time: 10AM - 2PM
       - title: Live Music
-        time: 8PM -1AM
+        description: please call
 ---

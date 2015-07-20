@@ -10,8 +10,8 @@ options:
 items:
   - name: caesar salad
     description: romaine lettuce, croutons, parmesan, caesar dressing
-    price: 7
+    price: 7.50
   - name: mixed greens
     description: shaved carrots, cucumbers, onion, tomato, balsamic or ranch dressing
-    price: 6.50
+    price: 7
 ---
