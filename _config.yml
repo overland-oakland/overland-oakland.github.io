@@ -6,7 +6,7 @@ markdown: kramdown
 # Permalinks
 permalink: pretty
 
-exclude: ['node_modules']
+exclude: ['node_modules, vendor']
 
 title: Overland Country Bar & Restaurant
 type: BarOrPub
