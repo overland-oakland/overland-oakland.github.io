@@ -5,36 +5,38 @@ items:
       - title: Bluegrass Brunch
         time: 10AM - 2PM
       - title: Trivia Night
-        description: (Coming Soon)
+        description: 7PM
     thumbnail:
   - day: Monday
     eventsList:
       - title: Industry Night
         description: $5 Sailor Jerry, $5 Jack Daniels, $3 PBR Tallboys
-      - title: DJ Kit Friday
-        description: (Coming Soon)
+      - title: Outlaw Oprey
+        description: with Handsome Hawk Valentine
   - day: Tuesday
     eventsList:
       - title: Taco Tuesday
-        time: 4PM - 10PM
+        time: All Night starting at 4PM
         description: $2 Tacos
       - title: Country Karaoke
-        time: 8PM - Midnight
+        time: 8PM
   - day: Wingo Wednesday
-    description: 50¢ wings | Bingo at 8PM
-    thumbnail:
+    eventsList:
+      - title: 50¢ wing night
+      - title: Bingo
+        time: 8PM
   - day: Thursday
     eventsList:
       - title: Twang Honky Tonk
         description: Line dancing lessons at 8PM
   - day: Friday
     eventsList:
-      - title: Line Dancing
-        description: two step | waltz
+      - title: Dance Lessons
+        time: 8PM
   - day: Saturday
     eventsList:
       - title: Bluegrass Brunch
         time: 10AM - 2PM
       - title: Live Music
-        description: please call
+        description: 8PM
 ---

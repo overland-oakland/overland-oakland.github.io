@@ -5,6 +5,8 @@
 			<h4 class="businessInfoGroup-title">{% for day in interval.dayOfWeek %}{% if forloop.first %}{{ day }} &ndash; {% endif %}{% if forloop.last %}{{ day }}{% endif %}{% endfor %}</h4>
 			<h5>{{ interval.opens }} &ndash; {{ interval.closes }}</h5>
 			{% endfor %}
+			<h4 class="businessInfoGroup-title">Sunday</h4>
+			<h5>11am - Midnight</h5>
 		</div>
 
 		<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 businessInfoGroup text-center">

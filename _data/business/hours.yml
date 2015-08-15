@@ -1,11 +1,10 @@
-- opens: 11am
-  closes: 12am
+- opens: 12pm
+  closes: Midnight
   dayOfWeek:
-    - Sunday
     - Monday
     - Tuesday
     - Wednesday
-- opens: 11am
+- opens: 12am
   closes: 2am
   dayOfWeek:
     - Thursday
