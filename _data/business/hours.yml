@@ -1,12 +1,22 @@
-- opens: 12pm
-  closes: Midnight
+- opens: 4pm
+  closes: 12am
   dayOfWeek:
     - Monday
     - Tuesday
+- opens: 12pm
+  closes: 12am
+  dayOfWeek:
     - Wednesday
-- opens: 12am
+- opens: 12pm
   closes: 2am
   dayOfWeek:
     - Thursday
     - Friday
+- opens: 9am
+  closes: 2am
+  dayOfWeek:
     - Saturday
+- opens: 9am
+  closes: 12am
+  dayOfWeek:
+    - Sunday
