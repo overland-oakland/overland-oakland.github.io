@@ -2,11 +2,15 @@
 	<div class="row businessInfo pad-25-vertical">
 		<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 businessInfoGroup text-center">
 			{% for interval in site.data.business.hours %}
-			<h4 class="businessInfoGroup-title">{% for day in interval.dayOfWeek %}{% if forloop.first %}{{ day }} &ndash; {% endif %}{% if forloop.last %}{{ day }}{% endif %}{% endfor %}</h4>
-			<h5>{{ interval.opens }} &ndash; {{ interval.closes }}</h5>
+			<h4 class="businessInfoGroup-title businessInfoGroup-inlineBlockItem">
+				{% if interval.dayOfWeek.first == interval.dayOfWeek.last %}
+					{{ interval.dayOfWeek | first }}
+				{% elsif interval.dayOfWeek.first != interval.dayOfWeek.last %}
+					{{ interval.dayOfWeek | first }}, {{ interval.dayOfWeek | last }}
+				{% endif %}
+			</h4>
+				<h5 class="businessInfoGroup-inlineBlockItem">{{ interval.opens }} &ndash; {{ interval.closes }}</h5><br>
 			{% endfor %}
-			<h4 class="businessInfoGroup-title">Sunday</h4>
-			<h5>11am - Midnight</h5>
 		</div>
 
 		<div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 businessInfoGroup text-center">
