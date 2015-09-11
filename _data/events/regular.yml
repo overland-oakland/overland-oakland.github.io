@@ -1,4 +1,3 @@
----
 items:
   - day: Sunday
     eventsList:
@@ -35,8 +34,5 @@ items:
         time: 8PM
   - day: Saturday
     eventsList:
-      - title: Bluegrass Brunch
-        time: 10AM - 2PM
       - title: Live Music
         description: 8PM
----
