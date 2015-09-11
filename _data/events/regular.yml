@@ -1,8 +1,10 @@
 items:
   - day: Sunday
     eventsList:
-      - title: Bluegrass Brunch
-        time: 10AM - 2PM
+      - title: Bar
+        time: opens at 9AM
+      - title: Brunch
+        time: starts at 10AM
       - title: Trivia Night
         description: 7PM
     thumbnail:
@@ -34,5 +36,9 @@ items:
         time: 8PM
   - day: Saturday
     eventsList:
+      - title: Bar
+        time: opens at 9AM
+      - title: Brunch
+        time: starts at 10AM
       - title: Live Music
         description: 8PM
