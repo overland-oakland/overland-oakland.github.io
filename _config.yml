@@ -1,6 +1,6 @@
 safe: true
 lsi: true
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 
 # Permalinks
